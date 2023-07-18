@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              playfair: ['Playfair Display', 'serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1
+      class="font-playfair underline text-4xl font-bold uppercase tracking-widest max-w-4xl mx-auto mt-6 px-12"
+    >
+      Die Weberei Ulm
+    </h1>
+    <div class="flex flex-wrap justify-center gap-12 p-12 max-w-4xl mx-auto">
+      <div class="py-6">
+        <img class="max-w-xs" src="desktop-mobile.svg" />
+      </div>
+      <div class="border border-e-0 border-black"></div>
+      <div class="py-6">
+        <h2 class="text-3xl font-bold font-playfair tracking-wider mb-6">
+          Apps & Websites
+          <em class="text-base not-italic block">Simpel und stabil</em>
+        </h2>
+        <p class="font-playfair">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          corporis rerum labore voluptatibus cupiditate. Laboriosam in facere
+          vero! Numquam aliquid necessitatibus temporibus deleniti cupiditate
+          sit voluptas. Beatae blanditiis saepe pariatur.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
