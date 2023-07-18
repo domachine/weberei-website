@@ -1,0 +1,18 @@
+{
+  "security": {
+    "members": {
+      "roles": [
+        "_admin"
+      ],
+      "names": [
+        "testdevice"
+      ]
+    },
+    "admins": {
+      "roles": [
+        "_admin"
+      ]
+    }
+  },
+  "docs": []
+}

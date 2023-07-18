@@ -1,0 +1,8 @@
+/node_modules
+/build
+/public/assets
+/public/app
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/config/local*

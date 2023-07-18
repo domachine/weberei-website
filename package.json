@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "node scripts/install.mjs",
+    "test": "tsc -b . && cd main && npm test",
+    "dev:main": "cd main && npm run dev",
+    "dev:main-assets": "cd main && npm run dev:assets",
+    "dev:main-app": "cd main && npm run dev:app",
+    "main:sqlite:loadSchema": "cd main && npm run sqlite:loadSchema",
+    "main:sqlite:syncData": "cd main && npm run sqlite:syncData",
+    "main:couchdb:loadData": "cd main && npm run couchdb:loadData",
+    "main:couchdb:saveData": "cd main && npm run couchdb:saveData"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/node": "^18.11.18",
+    "glob": "^8.0.3",
+    "prettier": "^2.8.2",
+    "typescript": "^5.0.2"
+  }
+}

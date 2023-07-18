@@ -1,0 +1,52 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:assets && npm run build:app",
+    "build:assets": "cd resources/assets && webpack --node-env production",
+    "build:app": "cd resources/app && webpack --node-env production",
+    "dev": "node --watch server.js",
+    "dev:assets": "cd resources/assets && webpack serve",
+    "dev:app": "cd resources/app && webpack serve",
+    "test": "node --test --test-reporter spec vendor && playwright test",
+    "sqlite:loadSchema": "node scripts/sqlite.js loadSchema",
+    "sqlite:syncData": "node scripts/sqlite.js syncData",
+    "couchdb:loadData": "node scripts/couchdb.js loadData",
+    "couchdb:saveData": "node scripts/couchdb.js saveData"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.30.0",
+    "@types/better-sqlite3": "^7.6.3",
+    "@types/config": "^3.3.0",
+    "@types/express": "^4.17.15",
+    "@types/html-webpack-plugin": "^3.2.6",
+    "@types/http-errors": "^2.0.1",
+    "@types/lodash.escape": "^4.0.7",
+    "@types/node": "^20.3.1",
+    "@types/prettier": "^2.7.2",
+    "autoprefixer": "^10.4.13",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss": "^8.4.25",
+    "postcss-loader": "^7.0.2",
+    "tailwindcss": "^3.2.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-manifest-plugin": "^5.0.0",
+    "workbox-webpack-plugin": "^6.5.4"
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.0.1",
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "lodash.escape": "^4.0.1",
+    "nano": "^10.1.2",
+    "pino": "^8.8.0",
+    "pino-http": "^8.3.1",
+    "undici": "^5.14.0"
+  }
+}

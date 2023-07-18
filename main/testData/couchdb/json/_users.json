@@ -1,0 +1,12 @@
+{
+  "docs": [
+    {
+      "_id": "org.couchdb.user:testdevice",
+      "type": "user",
+      "roles": ["device"],
+      "name": "testdevice",
+      "pin": "testit",
+      "password": "testit"
+    }
+  ]
+}

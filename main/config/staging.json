@@ -1,0 +1,7 @@
+{
+  "website": {
+    "port": 3000,
+    "baseUrl": "http://localhost:3000"
+  },
+  "couchDB": "http://admin:admin@couchdb:5984"
+}

@@ -1,0 +1,10 @@
+*
+
+!package.json
+!package-lock.json
+!resources
+!server
+server/website/plugins
+!server.js
+!shared
+!vendor
